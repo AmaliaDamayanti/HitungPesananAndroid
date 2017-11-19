@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="selamat datang di Aplikasi penjualan Ustegra"
+            android:textAllCaps="true"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textColor="#20978c"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editnama"
+            android:hint="Masukkan Nama Anda"
+            android:textSize="14sp"
+            android:layout_marginLeft="10dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tipe"
+                android:text="Pilih Tipe"
+                android:textSize="24dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kertas Linen"
+                android:id="@+id/cek1"
+                android:textSize="18sp"
+                android:layout_marginLeft="15dp"
+                android:paddingLeft="10dp"
+                android:onClick="ceksatu"
+                />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Print Warna"
+                android:id="@+id/cek2"
+                android:textSize="18sp"
+                android:layout_marginLeft="15dp"
+                android:paddingLeft="10dp"
+                android:onClick="ceksatu"
+                />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Laminating"
+                android:textSize="18sp"
+                android:id="@+id/cek3"
+                android:layout_marginLeft="15dp"
+                android:paddingLeft="10dp"
+                android:onClick="ceksatu"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/quantity"
+            android:text="Quantity"
+            android:textSize="24dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/kurang"
+                android:text="-"
+                android:textSize="18sp"
+                android:textColor="#fff"
+                android:background="#20978c"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:onClick="tombolkurang"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_quantity"
+                android:text="0"
+                android:textAlignment="center"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000"
+                android:textSize="18dp"
+                />
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tambah"
+                android:text="+"
+                android:textSize="18sp"
+                android:textColor="#fff"
+                android:background="#20978c"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:onClick="tomboltambah"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/price"
+            android:text="Price"
+            android:textSize="24dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_price"
+            android:text="Rp 0"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000"
+            android:textSize="18dp"
+            />
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/order"
+            android:text="gtygtr"
+            android:textAllCaps="true"
+            android:onClick="tombol"
+            android:background="#20978c"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            />
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/send"
+            android:text="SEND EMAIL"
+            android:textAllCaps="true"
+            android:onClick="tombolsend"
+            android:background="#20978c"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/hasil"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+
+
+    </LinearLayout>
+
+</ScrollView>
